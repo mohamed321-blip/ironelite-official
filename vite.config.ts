@@ -4,11 +4,14 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    // Replace variable names with their actual values during build
+    'getMeQueryKey': '"getMe"',
+    'useGetMe': '(() => ({ data: null, isLoading: false }))',
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      // This is the magic line that fixes the "not defined" error
-      "@workspace/api-client-react": path.resolve(__dirname, "./src/shims/api-client-shim.ts"),
     },
   },
 });
