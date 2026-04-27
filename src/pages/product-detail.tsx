@@ -19,7 +19,7 @@ export default function ProductDetail() {
   const { openAuth } = useAuthStore();
   const queryClient = useQueryClient();
 
-  const { data: user } = useGetMe({ query: { queryKey: getGetMeQueryKey(), retry: false } });
+  const { data: user } = (() => ({ data: null, isLoading: false }))({ query: { queryKey: getGetMeQueryKey(), retry: false } });
 
   const { data: product, isLoading, isError } = useGetProduct(id, {
     query: { enabled: !!id, queryKey: getGetProductQueryKey(id) }

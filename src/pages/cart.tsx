@@ -18,7 +18,7 @@ export default function CartPage() {
   const { openAuth } = useAuthStore();
   const [address, setAddress] = useState('');
 
-  const { data: user } = useGetMe({ query: { queryKey: getGetMeQueryKey(), retry: false } });
+  const { data: user } = (() => ({ data: null, isLoading: false }))({ query: { queryKey: getGetMeQueryKey(), retry: false } });
   const { data: cart, isLoading } = useGetCart({ query: { queryKey: getGetCartQueryKey(), enabled: !!user } });
 
   const updateMutation = useUpdateCartItem({

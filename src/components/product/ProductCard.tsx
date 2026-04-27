@@ -20,7 +20,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
   const { openAuth } = useAuthStore();
   const queryClient = useQueryClient();
   
-  const { data: user } = useGetMe({ query: { queryKey: getGetMeQueryKey(), retry: false } });
+  const { data: user } = (() => ({ data: null, isLoading: false }))({ query: { queryKey: getGetMeQueryKey(), retry: false } });
 
   const addMutation = useAddToCart({
     mutation: {

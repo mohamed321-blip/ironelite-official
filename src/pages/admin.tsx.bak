@@ -45,7 +45,7 @@ export default function AdminPage() {
   const queryClient = useQueryClient();
   const { toast } = useToast();
 
-  const { data: user, isLoading: userLoading } = useGetMe({ query: { queryKey: getGetMeQueryKey(), retry: false } });
+  const { data: user, isLoading: userLoading } = (() => ({ data: null, isLoading: false }))({ query: { queryKey: getGetMeQueryKey(), retry: false } });
 
   const statsQuery = useQuery({
     queryKey: ['admin', 'stats'],

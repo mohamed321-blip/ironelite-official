@@ -12,7 +12,7 @@ export default function OrdersPage() {
   const [, setLocation] = useLocation();
   const { openAuth } = useAuthStore();
 
-  const { data: user, isLoading: userLoading } = useGetMe({ query: { queryKey: getGetMeQueryKey(), retry: false } });
+  const { data: user, isLoading: userLoading } = (() => ({ data: null, isLoading: false }))({ query: { queryKey: getGetMeQueryKey(), retry: false } });
   
   const { data: orders, isLoading: ordersLoading } = useListOrders({ 
     query: { 
