@@ -1,3 +1,4 @@
+import "./init";
 // 1. IMMEDIATE GLOBAL FIX
 if (typeof window !== 'undefined') {
   (window as any).getMeQueryKey = 'getMe';
