@@ -1,4 +1,3 @@
-export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import * as React from "react"
 
 import type {
