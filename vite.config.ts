@@ -4,10 +4,14 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    // This forces the compiler to treat these names as these values
+    'getMeQueryKey': JSON.stringify('getMe'),
+    'useGetMe': '(() => ({ data: null, isLoading: false }))',
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "@workspace/api-client-react": path.resolve(__dirname, "./src/lib/mock-api.ts"),
     },
   },
 });

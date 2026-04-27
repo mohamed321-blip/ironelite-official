@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 import React, { useState } from 'react';
 import { useLocation, Link } from 'wouter';
 import { useI18n } from '@/lib/i18n';

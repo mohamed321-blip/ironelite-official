@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 import { create } from 'zustand';
 
 type CartStore = {

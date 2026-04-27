@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 "use client"
 
 import { GripVertical } from "lucide-react"

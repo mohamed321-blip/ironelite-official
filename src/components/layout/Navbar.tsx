@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useTheme } from 'next-themes';

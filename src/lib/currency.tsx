@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 import React, { createContext, useContext, useState } from 'react';
 
 export type Currency = 'USD' | 'MAD';

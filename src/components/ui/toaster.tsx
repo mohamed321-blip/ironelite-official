@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 import { useToast } from "@/hooks/use-toast"
 import {
   Toast,

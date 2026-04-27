@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 // THIS MUST BE THE FIRST BIT OF CODE EXECUTED
 const safetyNet = () => {
   if (typeof window !== 'undefined') {

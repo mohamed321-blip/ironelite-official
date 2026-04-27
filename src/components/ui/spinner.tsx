@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 import { Loader2Icon } from "lucide-react"
 
 import { cn } from "@/lib/utils"

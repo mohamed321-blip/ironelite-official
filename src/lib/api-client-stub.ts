@@ -1,3 +1,4 @@
+const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
 // Stub replacing @workspace/api-client-react
 // Replace with real implementations as needed
 
