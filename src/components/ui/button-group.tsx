@@ -1,4 +1,4 @@
-export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
+export const 'getMe' = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 

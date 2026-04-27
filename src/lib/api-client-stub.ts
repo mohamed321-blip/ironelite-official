@@ -1,4 +1,3 @@
-// Stub replacing @workspace/api-client-react
 // Replace with real implementations as needed
 
 export const useCart = () => ({ items: [], addItem: () => {}, removeItem: () => {} });

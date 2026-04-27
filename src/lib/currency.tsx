@@ -1,4 +1,4 @@
-export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
+export const 'getMe' = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import React, { createContext, useContext, useState } from 'react';
 
 export type Currency = 'USD' | 'MAD';

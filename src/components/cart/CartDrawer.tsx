@@ -1,4 +1,4 @@
-export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
+export const 'getMe' = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import React from 'react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { useCartStore } from '@/lib/store';

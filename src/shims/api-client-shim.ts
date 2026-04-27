@@ -1,4 +1,3 @@
-export const getMeQueryKey = 'getMe';
 export const useGetMe = () => ({ data: null, isLoading: false, error: null });
 export const apiClient = {
   get: () => Promise.resolve({ data: [] }),

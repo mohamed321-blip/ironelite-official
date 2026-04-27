@@ -5,7 +5,6 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   define: {
-    // Replace variable names with their actual values during build
     'getMeQueryKey': '"getMe"',
     'useGetMe': '(() => ({ data: null, isLoading: false }))',
   },
