@@ -1,4 +1,4 @@
-const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
+export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import React, { useState } from 'react';
 import { useRoute, Link } from 'wouter';
 import { useI18n } from '@/lib/i18n';

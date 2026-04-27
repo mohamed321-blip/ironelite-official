@@ -1,4 +1,4 @@
-const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
+export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 // Global safety net for missing Replit/Workspace variables
 if (typeof window !== 'undefined') {
   (window as any).'getMe' = 'getMe';

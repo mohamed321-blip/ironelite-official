@@ -1,4 +1,4 @@
-const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
+export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import { cn } from "@/lib/utils"
 
 function Kbd({ className, ...props }: React.ComponentProps<"kbd">) {

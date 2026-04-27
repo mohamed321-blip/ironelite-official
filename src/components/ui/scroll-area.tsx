@@ -1,4 +1,4 @@
-const getMeQueryKey = "getMe"; const useGetMe = () => ({ data: null, isLoading: false });
+export const getMeQueryKey = "getMe"; export const useGetMe = () => ({ data: null, isLoading: false });
 import * as React from "react"
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area"
 

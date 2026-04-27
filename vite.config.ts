@@ -5,9 +5,9 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   define: {
-    // This forces the compiler to treat these names as these values
+    'process.env': {},
+    // Force these variables to exist globally during build
     'getMeQueryKey': JSON.stringify('getMe'),
-    'useGetMe': '(() => ({ data: null, isLoading: false }))',
   },
   resolve: {
     alias: {
