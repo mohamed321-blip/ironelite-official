@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 export const apiClient = {
   get: () => Promise.resolve({ data: [] }),
   post: () => Promise.resolve({ data: {} }),
@@ -7,11 +5,8 @@ export const apiClient = {
   delete: () => Promise.resolve({ data: {} }),
 };
 
-// This fixes the "useGetMe is not defined" error
-export const useGetMe = () => {
-  return { data: null, isLoading: false, error: null };
-};
-
+export const useGetMe = () => ({ data: null, isLoading: false, error: null });
+export const getMeQueryKey = 'getMe';
 export const useAuthStore = () => ({ user: null });
 export const useCartStore = () => ({ items: [] });
 
