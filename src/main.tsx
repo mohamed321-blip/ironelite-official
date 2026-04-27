@@ -1,3 +1,4 @@
+import "./globals";
 if (typeof window !== 'undefined') {
   window.useGetMe = window.useGetMe || (() => ({ data: null, isLoading: false }));
   window.getMeQueryKey = window.getMeQueryKey || 'getMe';
