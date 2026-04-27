@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/gym-store",
+  "name": "gym-store",
   "version": "0.0.0",
   "private": true,
   "type": "module",
