@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'wouter';
 import { useI18n } from '@/lib/i18n';
-import { useListProducts, useGetCategories, getListProductsQueryKey, getGetCategoriesQueryKey } from '@workspace/api-client-react';
 import { ProductCard } from '@/components/product/ProductCard';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';

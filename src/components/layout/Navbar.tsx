@@ -4,7 +4,6 @@ import { useTheme } from 'next-themes';
 import { useI18n } from '@/lib/i18n';
 import { useCurrency } from '@/lib/currency';
 import { useAuthStore, useCartStore } from '@/lib/store';
-import { useGetMe, useLogout, useGetCart, getGetMeQueryKey, getGetCartQueryKey } from '@workspace/api-client-react';
 import { useQueryClient } from '@tanstack/react-query';
 import { Button } from '@/components/ui/button';
 import {

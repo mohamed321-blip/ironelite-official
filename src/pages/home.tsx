@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { useI18n } from '@/lib/i18n';
-import { useGetFeaturedProducts, useGetCategories, getGetFeaturedProductsQueryKey, getGetCategoriesQueryKey } from '@workspace/api-client-react';
 import { ProductCard } from '@/components/product/ProductCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronRight, Loader2 } from 'lucide-react';

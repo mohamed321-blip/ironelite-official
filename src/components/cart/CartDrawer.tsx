@@ -3,7 +3,6 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sh
 import { useCartStore } from '@/lib/store';
 import { useI18n } from '@/lib/i18n';
 import { useCurrency } from '@/lib/currency';
-import { useGetCart, useUpdateCartItem, useRemoveFromCart, getGetCartQueryKey } from '@workspace/api-client-react';
 import { useQueryClient } from '@tanstack/react-query';
 import { Button } from '@/components/ui/button';
 import { Loader2, Minus, Plus, Trash2, ShoppingCart } from 'lucide-react';

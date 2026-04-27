@@ -1,6 +1,5 @@
 import React from 'react';
 import { useI18n } from '@/lib/i18n';
-import { useListOrders, getListOrdersQueryKey, useGetMe, getGetMeQueryKey } from '@workspace/api-client-react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';

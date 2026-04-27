@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useI18n } from '@/lib/i18n';
-import { useLogin, useRegister, useGetMe, getGetMeQueryKey } from '@workspace/api-client-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Input } from '@/components/ui/input';
